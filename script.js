@@ -40,11 +40,11 @@ function displayStudents(students) {
     // Display each student in the list
     students.forEach(student => {
         const listItem = document.createElement("li");
-        listItem.textContent = `${student.name} - Grade: ${student.grade}`;
+        listItem.textContent = `${student.name} - Voto: ${student.grade}`;
 
         // Add a delete button for each student
         const deleteButton = document.createElement("button");
-        deleteButton.textContent = "Delete";
+        deleteButton.textContent = "Elimina";
         deleteButton.onclick = () => deleteStudent(student, students);
 
         listItem.appendChild(deleteButton);
